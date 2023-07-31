@@ -1,0 +1,153 @@
+
+  
+  * {
+    margin-right: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(108, 99, 99);
+    color: whitesmoke;
+  }
+  
+  header {
+    padding: 30px 0px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0px auto;
+  }
+  
+  header h1 {
+    font-family:  Constantia, Times, serif;
+    margin-top: -5px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  #newtask {
+    display: flex;
+  }
+  
+  input,
+  button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  #taskinput {
+    flex: 1 1 0%;
+  background-color: rgb(38, 49, 57);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  color: white;
+  font-size: 20px;
+  margin-left: -4rem;
+  }
+  
+  #taskinput::placeholder {
+    color: white;
+  }
+  
+  #tasksummit {
+    color: brown;
+    font-size: 25px;
+    font-weight: 1000;
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  #tasksummit:hover {
+    opacity: 0.8;
+  }
+  
+  #tasksummit:active {
+    opacity: 0.6;
+  }
+  
+  main {
+    flex: 1 1 0%;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .tasklist {
+    padding: 18px;
+  }
+  
+  .tasklist h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  #tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: #19276E;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .task .content {
+    flex: 1 1 0%;
+  }
+  
+  .task .content .text {
+    color: white;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+  }
+  
+  .task .content .text:not(:read-only) {
+    color: pink;
+  }
+  
+  .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+  }
+  
+  .task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+  }
+  
+  .task .actions button:hover {
+    opacity: 0.8;
+  }
+  
+  .task .actions button:active {
+    opacity: 0.6;
+  }
+  
+  .task .actions .edit {
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .task .actions .delete {
+    color: crimson;
+  }
